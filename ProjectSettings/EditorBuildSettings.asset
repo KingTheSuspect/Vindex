@@ -17,4 +17,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/ButonScene.unity
     guid: ba76c057523c5db47a935e2ec95f390c
+  - enabled: 1
+    path: Assets/Scenes/SeyhanSahne.unity
+    guid: fa249f0905aa9d241bdf5d983dc99761
   m_configObjects: {}
