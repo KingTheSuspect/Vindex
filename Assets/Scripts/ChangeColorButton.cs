@@ -9,7 +9,7 @@ public class ChangeColorButton : MonoBehaviour
     private RedLightsOnOff levelmanager;
     private bool firsttime = true;
     private int Esayar;
-    [SerializeField]private AudioSource siren;
+    [SerializeField]private AudioSource[] sesler;
     private SpriteRenderer butonred;
     [SerializeField] private SpriteRenderer altkatman;
     [SerializeField] private Sprite[] gorseller;
@@ -32,8 +32,11 @@ public class ChangeColorButton : MonoBehaviour
             text.gameObject.SetActive(true);
             if (Input.GetKeyDown(KeyCode.E) && firsttime)
             {
-                // E tuþuna basýlana kadar oyunun durmasýný saðlar
+                //Tamam artýk siren sesini ve kýrmýzý ýþýklarý kapatabilir miyiz lütfen
+                sesler[1].Play();
+                firsttime = false;
                 StartCoroutine(WaitForETap());
+
             }
         }
         else if (!triggered || !firsttime)
@@ -53,9 +56,7 @@ public class ChangeColorButton : MonoBehaviour
             }
             else if (Esayar == 2)
             {
-                yield return new WaitForSeconds(3);
-                //Dialog
-                //StopGame
+                yield return new WaitForSeconds(1);
                 foreach (var item in levelmanager.lights)
                 {
                     item.color = Color.white;
@@ -63,16 +64,28 @@ public class ChangeColorButton : MonoBehaviour
 
                 }
                 levelmanager.flickerSpeed = 0;
-                
+                sesler[0].Stop();
+                butonred.sprite = gorseller[2];
+                altkatman.sprite = gorseller[3];
                 isETapped = true;
+                yield return new WaitForSeconds(3);
+                //Böylesi daha iyi
+                sesler[2].Play();
             }
             yield return null;
         }
+        
 
-        butonred.sprite = gorseller[2];
-        altkatman.sprite = gorseller[3];
-        siren.Stop();
-        firsttime = false;
+        yield return new WaitForSeconds(4);
+        //Hatta rengi de deðiþtirirsek çok güzel olur
+        sesler[3].Play();
+        yield return new WaitForSeconds(2);
+        foreach (var item in levelmanager.lights)
+        {
+            item.color = Color.cyan;
+            item.intensity = 1;
+
+        }
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
