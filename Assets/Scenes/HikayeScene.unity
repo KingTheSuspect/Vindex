@@ -434,22 +434,19 @@ MonoBehaviour:
   - {fileID: 21300000, guid: b485974f4b88b554398031d8e52f8d9f, type: 3}
   - {fileID: 21300000, guid: d512e68e71e522d4981e0bbd34af92b9, type: 3}
   textforimages:
-  - "Y\u0131llar sonra plan\u0131n\u0131 uygulama f\u0131rsat\u0131 bulan Mr. Hands,
-    ezeli rakibi Profes\xF6r'\xFCn g\xF6lgesinden \xE7\u0131kmak i\xE7in bu gece
-    harekete ge\xE7ecekti. Hedefi, Profes\xF6r'\xFCn hayat\u0131n\u0131 tamamen alt
-    \xFCst etmekti."
-  - "Mr. Hands y\u0131llar boyunca s\xFCren ara\u015Ft\u0131rmalar ve incelemeler
-    sonucunda, Profes\xF6r'\xFCn kar\u0131s\u0131n\u0131n arad\u0131\u011F\u0131
-    bilgilere eri\u015Fimi olan tek ki\u015Fi oldu\u011Funu ke\u015Ffetti. Kar\u0131s\u0131n\u0131n
-    bilgeli\u011Fi ve zekas\u0131, insanlar\u0131n hayranl\u0131kla bakt\u0131\u011F\u0131
-    bir durumdu."
-  - "Profes\xF6r i\xE7in zorlu bir s\u0131nav olan bu oyunda, ger\xE7ek bir deha
-    oldu\u011Funu kan\u0131tlamas\u0131 gerekiyordu. Kar\u0131s\u0131n\u0131 kurtarmak
-    i\xE7in kar\u015F\u0131s\u0131na \xE7\u0131kan engelleri a\u015Fmas\u0131, yeteneksizli\u011Fini
-    ortaya \xE7\u0131karmamak i\xE7in son \u015Fans\u0131yd\u0131."
+  - "Yillar sonra planini uygulama firsati bulan Mr. Hands, ezeli rakibi Profes\xF6r'\xFCn
+    g\xF6lgesinden \xE7ikmak i\xE7in bu gece harekete ge\xE7ecekti. Hedefi, Profes\xF6r'\xFCn
+    hayatini tamamen alt \xFCst etmekti."
+  - "Mr. Hands yillar boyunca s\xFCren arastirmalar ve incelemeler sonucunda, Profes\xF6r'\xFCn
+    karisinin aradigi bilgilere eri\u015Fimi olan tek ki\u015Fi oldu\u011Funu kesfetti.
+    Karisinin bilgeli\u011Fi ve zekasi, insanlarin hayranlikla baktig\u0131 bir durumdu."
+  - "Profes\xF6r i\xE7in zorlu bir sinav olan bu oyunda, ger\xE7ek bir deha oldugunu
+    kanitlamasi gerekiyordu. Karisini kurtarmak i\xE7in karsisina \xE7ikan engelleri
+    asmasi, yeteneksizligini ortaya \xE7ikarmamak i\xE7in son sansiydi."
   image: {fileID: 681470500}
   Rtext: {fileID: 1308138764}
-  typingSpeed: 0.1
+  typingSpeed: 0.05
+  whichscenetogo: 1
 --- !u!1 &1308138762
 GameObject:
   m_ObjectHideFlags: 0
@@ -508,13 +505,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: "Y\u0131llar sonra plan\u0131n\u0131 uygulama f\u0131rsat\u0131 bulan Mr.
-    Hands, ezeli rakibi Profes\xF6r'\xFCn g\xF6lgesinden \xE7\u0131kmak i\xE7in bu
-    gece harekete ge\xE7ecekti. Hedefi, Profes\xF6r'\xFCn hayat\u0131n\u0131 tamamen
-    alt \xFCst etmekti."
+  m_text: "Yillar sonra planini uygulama firsati bulan Mr. Hands, ezeli rakibi Profes\xF6r'\xFCn
+    g\xF6lgesinden \xE7ikmak i\xE7in bu gece harekete ge\xE7ecekti. Hedefi, Profes\xF6r'\xFCn
+    hayatini tamamen alt \xFCst etmekti.\n"
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 26d0b2f525332244282f9c43305d186c, type: 2}
+  m_sharedMaterial: {fileID: -403582956227372, guid: 26d0b2f525332244282f9c43305d186c, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

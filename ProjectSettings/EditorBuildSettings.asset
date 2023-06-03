@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SeyhanSahne.unity
     guid: fa249f0905aa9d241bdf5d983dc99761
+  - enabled: 1
+    path: Assets/Scenes/HikayeScene.unity
+    guid: d53f6e6535c410745ad70a29b9560f1c
   m_configObjects: {}

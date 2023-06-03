@@ -18,6 +18,9 @@ public class MusicDontDestroy2 : MonoBehaviour
         {
             Destroy(gameObject);
         }
+    }
+    private void Update()
+    {
         Scene activeScene = SceneManager.GetActiveScene();
         if (activeScene.buildIndex == whichscenedestory)
         {

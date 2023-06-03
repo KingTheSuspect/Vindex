@@ -2,6 +2,8 @@ using System.Collections;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using UnityEditor.SceneManagement;
+using UnityEngine.SceneManagement;
 
 public class StorySceneScript : MonoBehaviour
 {
@@ -10,6 +12,7 @@ public class StorySceneScript : MonoBehaviour
     public GameObject image;
     public TextMeshProUGUI Rtext;
     public float typingSpeed = 0.1f;
+    [SerializeField] private int whichscenetogo;
 
     private void Start()
     {
@@ -21,7 +24,11 @@ public class StorySceneScript : MonoBehaviour
         for (int i = 0; i < photos.Length; i++)
         {
             yield return StartCoroutine(ShowImageWithText(photos[i], textforimages[i]));
-            yield return new WaitForSeconds(5);
+            yield return new WaitForSeconds(3);
+            if (i == photos.Length - 1)
+            {
+                SceneManager.LoadScene(whichscenetogo);
+            }
         }
     }
 

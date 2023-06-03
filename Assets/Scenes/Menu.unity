@@ -1013,7 +1013,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6b90e50d9e12ead4a9a4061a7e9b4ac5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  playsceneid: 1
+  playsceneid: 5
   settingsceneid: 0
 --- !u!4 &1494739955
 Transform:
@@ -1171,7 +1171,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea46fd677028b604d98ed8e79d6819c3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  whichscenedestory: 0
+  whichscenedestory: 1
 --- !u!1 &1755142279
 GameObject:
   m_ObjectHideFlags: 0
