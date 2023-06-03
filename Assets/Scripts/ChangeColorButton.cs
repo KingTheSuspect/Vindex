@@ -49,10 +49,16 @@ public class ChangeColorButton : MonoBehaviour
             else if (Esayar == 2)
             {
                 yield return new WaitForSeconds(3);
+                //Dialog
+                //StopGame
                 foreach (var item in levelmanager.lights)
                 {
                     item.color = Color.white;
+                    item.intensity = 1;
+
                 }
+                levelmanager.flickerSpeed = 0;
+                
                 isETapped = true;
             }
             yield return null;
