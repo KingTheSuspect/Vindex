@@ -18,9 +18,18 @@ EditorBuildSettings:
     path: Assets/Scenes/ButonScene.unity
     guid: ba76c057523c5db47a935e2ec95f390c
   - enabled: 1
+    path: Assets/Scenes/HikayeScene.unity
+    guid: d53f6e6535c410745ad70a29b9560f1c
+  - enabled: 1
     path: Assets/Scenes/Level1.unity
     guid: fa249f0905aa9d241bdf5d983dc99761
   - enabled: 1
-    path: Assets/Scenes/HikayeScene.unity
-    guid: d53f6e6535c410745ad70a29b9560f1c
+    path: Assets/Scenes/Level2.unity
+    guid: 782a037f729bcb741b08433a645f5830
+  - enabled: 1
+    path: Assets/Scenes/Level3.unity
+    guid: 68439dc146ebcb24db13012e385dfbdc
+  - enabled: 1
+    path: Assets/Scenes/Level4.unity
+    guid: e25201c2cc5bc67479dc71d8969ec53c
   m_configObjects: {}
