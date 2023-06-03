@@ -290,8 +290,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 179745875}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9999844, w: 0.005594366}
-  m_LocalPosition: {x: 11.01, y: 0.99, z: -0.64426374}
+  m_LocalRotation: {x: -0, y: -0, z: 0.9999858, w: 0.0053244703}
+  m_LocalPosition: {x: 11.01, y: 1.97, z: -0.64426374}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -366,7 +366,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 0
   m_PointLightOuterAngle: 182.85
   m_PointLightInnerRadius: 1.25
-  m_PointLightOuterRadius: 6.194894
+  m_PointLightOuterRadius: 6.5094547
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -618,8 +618,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 341839646}
-  m_LocalRotation: {x: -0, y: -0, z: 0.9999844, w: 0.005594366}
-  m_LocalPosition: {x: -4.51, y: 0.96, z: -0.64426374}
+  m_LocalRotation: {x: -0, y: -0, z: 0.9999865, w: 0.0051897694}
+  m_LocalPosition: {x: -4.51, y: 1.94, z: -0.64426374}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -694,7 +694,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 0
   m_PointLightOuterAngle: 182.85
   m_PointLightInnerRadius: 1.25
-  m_PointLightOuterRadius: 6.194894
+  m_PointLightOuterRadius: 7.068761
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
@@ -865,7 +865,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620406465}
   m_LocalRotation: {x: -0, y: -0, z: 0.9999844, w: 0.005594366}
-  m_LocalPosition: {x: 3.99, y: 0.89, z: -0.64426374}
+  m_LocalPosition: {x: 3.99, y: 1.87, z: -0.64426374}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -940,7 +940,7 @@ MonoBehaviour:
   m_PointLightInnerAngle: 0
   m_PointLightOuterAngle: 182.85
   m_PointLightInnerRadius: 1.25
-  m_PointLightOuterRadius: 6.194894
+  m_PointLightOuterRadius: 6.509455
   m_ShapeLightParametricSides: 5
   m_ShapeLightParametricAngleOffset: 0
   m_ShapeLightParametricRadius: 1
