@@ -314,7 +314,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.455
-  m_Color: {r: 0, g: 1, b: 0.8980392, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_Intensity: 0.75
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 0
@@ -642,7 +642,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.455
-  m_Color: {r: 0, g: 1, b: 0.8980392, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_Intensity: 0.75
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 0
@@ -888,7 +888,7 @@ MonoBehaviour:
   m_LightType: 3
   m_BlendStyleIndex: 0
   m_FalloffIntensity: 0.455
-  m_Color: {r: 0, g: 1, b: 0.8997545, a: 1}
+  m_Color: {r: 1, g: 0, b: 0, a: 1}
   m_Intensity: 0.75
   m_LightVolumeIntensity: 0
   m_LightVolumeIntensityEnabled: 0
@@ -3193,7 +3193,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1676199122
 Transform:
   m_ObjectHideFlags: 0
