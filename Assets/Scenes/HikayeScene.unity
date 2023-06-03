@@ -430,10 +430,13 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   photos:
-  - {fileID: 21300000, guid: 6d104f1d77ec9364eb7e651da2d83799, type: 3}
-  - {fileID: 21300000, guid: 6d104f1d77ec9364eb7e651da2d83799, type: 3}
+  - {fileID: 21300000, guid: bca5eadb406fc9c4d93191a724514135, type: 3}
+  - {fileID: 0}
   textforimages:
-  - "Selam uzun zamand\u0131r g\xF6r\xFC\u015Fmemei\u015Ftik"
+  - "Y\u0131llar sonra plan\u0131n\u0131 uygulama f\u0131rsat\u0131 bulan Mr. Hands,
+    ezeli rakibi Profes\xF6r'\xFCn g\xF6lgesinden \xE7\u0131kmak i\xE7in bu gece
+    harekete ge\xE7ecekti. Hedefi, Profes\xF6r'\xFCn hayat\u0131n\u0131 tamamen alt
+    \xFCst etmekti."
   - "Selam uzun zamand\u0131r g\xF6r\xFC\u015Fmemei\u015Ftik"
   image: {fileID: 681470500}
   Rtext: {fileID: 1308138764}
@@ -496,10 +499,13 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Text
+  m_text: "Y\u0131llar sonra plan\u0131n\u0131 uygulama f\u0131rsat\u0131 bulan Mr.
+    Hands, ezeli rakibi Profes\xF6r'\xFCn g\xF6lgesinden \xE7\u0131kmak i\xE7in bu
+    gece harekete ge\xE7ecekti. Hedefi, Profes\xF6r'\xFCn hayat\u0131n\u0131 tamamen
+    alt \xFCst etmekti."
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 6e4ffd53cf81a0a4489069997d75e0e1, type: 2}
+  m_sharedMaterial: {fileID: 3040380037612038864, guid: 6e4ffd53cf81a0a4489069997d75e0e1, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -9,12 +9,17 @@ public class ChangeColorButton : MonoBehaviour
     private RedLightsOnOff levelmanager;
     private bool firsttime = true;
     private int Esayar;
+    [SerializeField]private AudioSource siren;
+    private SpriteRenderer butonred;
+    [SerializeField] private SpriteRenderer altkatman;
+    [SerializeField] private Sprite[] gorseller;
 
     private void Start()
     {
         text.gameObject.SetActive(false);
         levelmanager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<RedLightsOnOff>();
         firsttime = true;
+        butonred = this.gameObject.GetComponent<SpriteRenderer>();
     }
 
     private bool isETapped = false;
@@ -64,8 +69,9 @@ public class ChangeColorButton : MonoBehaviour
             yield return null;
         }
 
-
-
+        butonred.sprite = gorseller[2];
+        altkatman.sprite = gorseller[3];
+        siren.Stop();
         firsttime = false;
     }
     private void OnTriggerEnter2D(Collider2D collision)
