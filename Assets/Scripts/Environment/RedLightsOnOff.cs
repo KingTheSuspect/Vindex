@@ -5,7 +5,7 @@ using UnityEngine.Rendering.Universal;
 
 public class RedLightsOnOff : MonoBehaviour
 {
-    [SerializeField]private Light2D[] lights;
+    public Light2D[] lights;
     public float minIntensity = 0f;      // Minimum ýþýk parlaklýðý
     public float maxIntensity = 1f;      // Maksimum ýþýk parlaklýðý
     public float flickerSpeed = 1f;      // Parlaklýk deðiþtirme hýzý
