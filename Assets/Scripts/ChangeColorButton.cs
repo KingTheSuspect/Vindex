@@ -33,7 +33,6 @@ public class ChangeColorButton : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.E) && firsttime)
             {
                 //Tamam artýk siren sesini ve kýrmýzý ýþýklarý kapatabilir miyiz lütfen
-                sesler[1].Play();
                 firsttime = false;
                 StartCoroutine(WaitForETap());
 
@@ -48,6 +47,9 @@ public class ChangeColorButton : MonoBehaviour
     private IEnumerator WaitForETap()
     {
         Esayar = 0;
+        sesler[1].Play();
+        yield return new WaitForSeconds(3);
+
         while (!isETapped)
         {
             if (Input.GetKeyDown(KeyCode.E))
@@ -56,7 +58,6 @@ public class ChangeColorButton : MonoBehaviour
             }
             else if (Esayar == 2)
             {
-                yield return new WaitForSeconds(1);
                 foreach (var item in levelmanager.lights)
                 {
                     item.color = Color.white;
@@ -76,10 +77,10 @@ public class ChangeColorButton : MonoBehaviour
         }
         
 
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(3);
         //Hatta rengi de deðiþtirirsek çok güzel olur
         sesler[3].Play();
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(3);
         foreach (var item in levelmanager.lights)
         {
             item.color = Color.cyan;
