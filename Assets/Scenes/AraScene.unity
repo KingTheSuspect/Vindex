@@ -965,7 +965,7 @@ MonoBehaviour:
   - {fileID: 341839648}
   minIntensity: 0
   maxIntensity: 1
-  flickerSpeed: 5
+  flickerSpeed: 3
 --- !u!1001 &920979634
 PrefabInstance:
   m_ObjectHideFlags: 0
