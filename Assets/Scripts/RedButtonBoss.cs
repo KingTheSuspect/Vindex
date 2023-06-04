@@ -14,6 +14,7 @@ public class RedButtonBoss : MonoBehaviour
     public float hedefToleransi = 0.1f;
     public bool hedefeUlasti = false;
     private bool hfdulasti;
+    public bool baslat = false;
 
 
 
@@ -81,5 +82,15 @@ public class RedButtonBoss : MonoBehaviour
         Disp2.gameObject.SetActive(true);
         yield return new WaitForSeconds(2);
         sesler[0].Play();
+        Disp1.gameObject.SetActive(true);
+        Disp2.gameObject.SetActive(false);
+        Disp1.orthographicSize = 6.9852f;
+        Disp1.gameObject.GetComponent<CameraController>().minHeight = 6.0f;
+        Disp1.gameObject.GetComponent<CameraController>().minXPos = -6.6f;
+        Disp1.gameObject.GetComponent<CameraController>().maxXPos = -6.6f;
+        yield return new WaitForSeconds(4);
+        baslat = true;
+        yield return new WaitForSeconds(10);
+        sesler[1].Play();
     }
 }

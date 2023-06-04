@@ -4,8 +4,8 @@ public class CameraController : MonoBehaviour
 {
     private Transform target;
 
-    [SerializeField] private float minHeight, maxHeight;
-    [SerializeField] private float minXPos, maxXPos;
+    public float minHeight, maxHeight;
+    public float minXPos, maxXPos;
 
     private void Start()
     {
