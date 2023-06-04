@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class ControlTiles : MonoBehaviour
+public class ControlTilesLevel2 : MonoBehaviour
 {
     public LayerMask selectableLayer;           // The layer mask for selectable game objects    
 
@@ -50,7 +50,7 @@ public class ControlTiles : MonoBehaviour
             GetComponent<PlayerController>().safeJump = true;
             GetComponent<PlayerController>().moveSpeed = 5;
             //GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
-            selectedObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+            selectedObject.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
             selectedObject = null;
             isDragging = false;
             lineRenderer.enabled = false;

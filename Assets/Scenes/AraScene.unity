@@ -3540,17 +3540,17 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   lights:
-  - {fileID: 620406467}
-  - {fileID: 179745877}
-  - {fileID: 341839648}
-  - {fileID: 1945249990}
   - {fileID: 67215727}
   - {fileID: 1679201550}
   - {fileID: 296110976}
   - {fileID: 459911428}
-  minIntensity: 0
+  - {fileID: 1945249990}
+  - {fileID: 341839648}
+  - {fileID: 179745877}
+  - {fileID: 620406467}
+  minIntensity: 0.1
   maxIntensity: 1
-  flickerSpeed: 3
+  flickerSpeed: 2.5
 --- !u!1 &869479319
 GameObject:
   m_ObjectHideFlags: 0
