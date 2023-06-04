@@ -7,9 +7,9 @@ using UnityEngine.SceneManagement;
 
 public class lazerplayer : MonoBehaviour
 {
-    //[SerializeField] private AudioSource[] sesl;
+    [SerializeField] private AudioSource[] sesl;
     private bool triggered;
-    //[SerializeField] private Sprite[] sprites;
+    [SerializeField] private Sprite[] sprites;
     private bool salak;
     [SerializeField] private GameObject isikatom;
     private bool timehascome;
@@ -46,7 +46,7 @@ public class lazerplayer : MonoBehaviour
 
 
             salak = false;
-            //gameObject.GetComponent<SpriteRenderer>().sprite = sprites[1];
+            gameObject.GetComponent<SpriteRenderer>().sprite = sprites[0];
 
             StartCoroutine(Baslat());
         }
@@ -57,9 +57,10 @@ public class lazerplayer : MonoBehaviour
     private IEnumerator Baslat()
     {
         //sesl[0].Play();
-        yield return new WaitForSeconds(4);
+        yield return new WaitForSeconds(3);
         timehascome = true;
-        yield return new WaitForSeconds(2);
+        sesl[0].Play();
+        yield return new WaitForSeconds(3);
         SceneManager.LoadScene(10);
 
 
