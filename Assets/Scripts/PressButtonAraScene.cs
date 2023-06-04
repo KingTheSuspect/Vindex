@@ -32,7 +32,7 @@ public class PressButtonAraScene : MonoBehaviour
             ETusu.SetActive(false);
         }
 
-        if (triggered && firsttime)
+        if (triggered && firsttime && Input.GetKeyDown(KeyCode.E))
         {
             firsttime = false;
             gameObject.GetComponent<SpriteRenderer>().sprite = sprites[1];

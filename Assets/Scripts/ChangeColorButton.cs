@@ -9,21 +9,20 @@ public class ChangeColorButton : MonoBehaviour
     private bool triggered;
     private RedLightsOnOff levelmanager;
     private bool firsttime = true;
-    private int Esayar;
-    [SerializeField]private AudioSource[] sesler;
+    [SerializeField] private AudioSource[] sesler;
     private SpriteRenderer butonred;
     [SerializeField] private SpriteRenderer altkatman;
     [SerializeField] private Sprite[] gorseller;
-    //private GameObject mrhandtext;
+    private GameObject player;
+    [SerializeField] private GameObject duvargorunmez;
 
     private void Start()
     {
+        player = GameObject.FindGameObjectWithTag("Player");
         text.gameObject.SetActive(false);
         levelmanager = GameObject.FindGameObjectWithTag("LevelManager").GetComponent<RedLightsOnOff>();
         firsttime = true;
         butonred = this.gameObject.GetComponent<SpriteRenderer>();
-        //mrhandtext = GameObject.FindGameObjectWithTag("MrHands");
-        //mrhandtext.GetComponent<MrHandsText>().WriteText("");
     }
 
     private bool isETapped = false;
@@ -50,41 +49,26 @@ public class ChangeColorButton : MonoBehaviour
 
     private IEnumerator WaitForETap()
     {
-        Esayar = 0;
+        player.GetComponent<PlayerController>().moveSpeed = 0;
+        player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Static;
         //Tamam artýk siren sesini ve kýrmýzý ýþýklarý kapatabilir miyiz lütfen
         sesler[1].Play();
-        //mrhandtext.GetComponent<MrHandsText>().WriteText("MrHands: Tamam artik siren sesini ve kirmizi isiklari kapatabilir miyiz lütfen");
-        yield return new WaitForSeconds(4);
-        //mrhandtext.GetComponent<MrHandsText>().WriteText("");
-
-        while (!isETapped)
+        yield return new WaitForSeconds(5);
+        foreach (var item in levelmanager.lights)
         {
-            if (Input.GetKeyDown(KeyCode.E))
-            {
-                Esayar++;
-            }
-            else if (Esayar == 2)
-            {
-                foreach (var item in levelmanager.lights)
-                {
-                    item.color = Color.white;
-                    item.intensity = 1;
+            item.color = Color.white;
+            item.intensity = 1;
 
-                }
-                levelmanager.flickerSpeed = 0;
-                sesler[0].Stop();
-                butonred.sprite = gorseller[2];
-                altkatman.sprite = gorseller[3];
-                isETapped = true;
-                yield return new WaitForSeconds(3);
-                //Böylesi daha iyi
-                sesler[2].Play();
-                //mrhandtext.GetComponent<MrHandsText>().WriteText("MrHands: Hmm.. bu rengi sevmedim");
-            }
-            yield return null;
         }
-        
-
+        levelmanager.flickerSpeed = 0;
+        sesler[0].Stop();
+        butonred.sprite = gorseller[2];
+        altkatman.sprite = gorseller[3];
+        isETapped = true;
+        yield return new WaitForSeconds(3);
+        //Böylesi daha iyi
+        sesler[2].Play();
+        //mrhandtext.GetComponent<MrHandsText>().WriteText("MrHands: Hmm.. bu rengi sevmedim");
         yield return new WaitForSeconds(3);
         //mrhandtext.GetComponent<MrHandsText>().WriteText("");
         //Hatta rengi de deðiþtirirsek çok güzel olur
@@ -98,6 +82,9 @@ public class ChangeColorButton : MonoBehaviour
             item.intensity = 1;
 
         }
+        player.GetComponent<PlayerController>().moveSpeed = 5;
+        player.GetComponent<Rigidbody2D>().bodyType = RigidbodyType2D.Dynamic;
+        duvargorunmez.SetActive(false);
     }
     private void OnTriggerEnter2D(Collider2D collision)
     {
