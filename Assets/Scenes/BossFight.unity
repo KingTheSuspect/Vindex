@@ -11782,6 +11782,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: FadeCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 8528306396517636926, guid: a27a3cfb9476efe4992022598617a165, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a27a3cfb9476efe4992022598617a165, type: 3}
 --- !u!1001 &957062541
@@ -26371,18 +26375,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.16491067}
+  m_Offset: {x: 0, y: -0.06630927}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 0.3125, y: 1.59375}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5008106, y: 1.6701787}
+  m_Size: {x: 0.5008106, y: 1.4729759}
   m_EdgeRadius: 0
 --- !u!50 &1751478396
 Rigidbody2D:

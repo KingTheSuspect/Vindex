@@ -2357,7 +2357,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ebdf388dd1507b24993c58e5bd7eb15c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  text: {fileID: 211578285}
+  textkonus: {fileID: 0}
+  pressE: {fileID: 0}
+  konusmalar: []
 --- !u!1001 &1110788017
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -7014,18 +7016,18 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.16491067}
+  m_Offset: {x: 0, y: -0.048381686}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 2}
+    oldSize: {x: 0.3125, y: 1.53125}
     newSize: {x: 1, y: 2}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5008106, y: 1.6701787}
+  m_Size: {x: 0.5008106, y: 1.4371207}
   m_EdgeRadius: 0
 --- !u!50 &1751478396
 Rigidbody2D:
