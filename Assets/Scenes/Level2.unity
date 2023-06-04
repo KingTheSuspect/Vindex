@@ -930,8 +930,8 @@ MonoBehaviour:
   pressE: {fileID: 1599914880}
   konusmalar:
   - Hey Selam!
-  - Gecmeye basarabilecek misin karsiya?
-  - Eger ki beceremezsen, mouse ile kaldirmayi dene
+  - Karsiya gecmeyi basarabilecek misin?
+  - Eger ki beceremezsen, zihin gucun(mouse1) ile kaldirmayi dene
   - Ayrica biraz kopru yapman gerekecek ^^
 --- !u!1001 &130889302
 PrefabInstance:
@@ -1350,6 +1350,63 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 211578283}
   m_CullTransparentMesh: 1
+--- !u!1001 &239833981
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2686625183788984736, guid: 043712b84e6a98f4e8d681cddd5aee1f, type: 3}
+      propertyPath: m_Name
+      value: AutoSeslendirme
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686625183788984737, guid: 043712b84e6a98f4e8d681cddd5aee1f, type: 3}
+      propertyPath: m_RootOrder
+      value: 17
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686625183788984737, guid: 043712b84e6a98f4e8d681cddd5aee1f, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -4.595234
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686625183788984737, guid: 043712b84e6a98f4e8d681cddd5aee1f, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 4.0841684
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686625183788984737, guid: 043712b84e6a98f4e8d681cddd5aee1f, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -0.046556845
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686625183788984737, guid: 043712b84e6a98f4e8d681cddd5aee1f, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686625183788984737, guid: 043712b84e6a98f4e8d681cddd5aee1f, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686625183788984737, guid: 043712b84e6a98f4e8d681cddd5aee1f, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686625183788984737, guid: 043712b84e6a98f4e8d681cddd5aee1f, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686625183788984737, guid: 043712b84e6a98f4e8d681cddd5aee1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686625183788984737, guid: 043712b84e6a98f4e8d681cddd5aee1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2686625183788984737, guid: 043712b84e6a98f4e8d681cddd5aee1f, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 043712b84e6a98f4e8d681cddd5aee1f, type: 3}
 --- !u!1 &335677884
 GameObject:
   m_ObjectHideFlags: 0

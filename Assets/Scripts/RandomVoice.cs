@@ -15,14 +15,16 @@ public class RandomVoice : MonoBehaviour
     }
     IEnumerator GiveVoice()
     {
-        yield return new WaitForSeconds(50);
+        yield return new WaitForSeconds(5);
         gelensayi = Random.Range(1, 10);
         gelenses = Random.Range(1, sesler.Length);
-        if (gelensayi > 5)
+        if (gelensayi > 6)
         {
             sesler[gelenses].Play();
         }
+        yield return new WaitForSeconds(25);
         StartCoroutine(GiveVoice());
+
        
     }
 }

@@ -60,7 +60,7 @@ public class lazerplayer : MonoBehaviour
         timehascome = true;
         sesl[0].Play();
         yield return new WaitForSeconds(3);
-        SceneManager.LoadScene(10);
+        SceneManager.LoadScene(11);
 
 
 
