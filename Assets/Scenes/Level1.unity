@@ -1725,7 +1725,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4811626097469461939, guid: 1b42eadd70cb92e4da49d7d4b86366f4, type: 3}
       propertyPath: lazerkapalisaniye
-      value: 0.6
+      value: 1.2
       objectReference: {fileID: 0}
     - target: {fileID: 4811626097810235459, guid: 1b42eadd70cb92e4da49d7d4b86366f4, type: 3}
       propertyPath: m_RootOrder
@@ -6565,7 +6565,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4811626097469461939, guid: 1b42eadd70cb92e4da49d7d4b86366f4, type: 3}
       propertyPath: lazerkapalisaniye
-      value: 0.75
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4811626097810235459, guid: 1b42eadd70cb92e4da49d7d4b86366f4, type: 3}
       propertyPath: m_RootOrder
